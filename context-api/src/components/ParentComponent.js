@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import ChildrenComponent from "./ChildrenComponent";
-import { themeContext } from "../contexts/ThemeContext";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 export default function ParentComponent() {
-  const { mode, setMode } = useContext(themeContext);
+  const { mode, setMode } = useContext(ThemeContext);
 
   function handleToggle(e) {
     e.preventDefault();
